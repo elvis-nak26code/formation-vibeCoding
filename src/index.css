@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html { scroll-behavior: smooth; }
+body { background-color: #080B14; }
+
+@layer components {
+  .container-page { @apply mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8; }
+  .section { @apply py-20 sm:py-24 lg:py-28; }
+  .section-title { @apply font-display text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-text; }
+  .section-sub { @apply mt-4 max-w-2xl text-base sm:text-lg text-muted; }
+  .glass { @apply bg-card/60 backdrop-blur-xl border border-white/10; }
+  .card { @apply rounded-2xl border border-white/10 bg-card/70 backdrop-blur-sm shadow-soft; }
+  .btn-primary { @apply inline-flex items-center justify-center gap-2 rounded-xl bg-electric px-6 py-3 font-semibold text-white transition hover:bg-blue-500 hover:shadow-glow focus:outline-none focus:ring-2 focus:ring-cyan/60 disabled:opacity-60 disabled:cursor-not-allowed; }
+  .btn-secondary { @apply inline-flex items-center justify-center gap-2 rounded-xl border border-white/15 bg-white/5 px-6 py-3 font-semibold text-text transition hover:bg-white/10 hover:border-cyan/40 focus:outline-none focus:ring-2 focus:ring-cyan/40; }
+  .input { @apply w-full rounded-xl border border-white/10 bg-bg2/80 px-4 py-3 text-text placeholder:text-muted/70 focus:border-cyan/50 focus:outline-none focus:ring-2 focus:ring-cyan/20; }
+  .label { @apply mb-2 block text-sm font-medium text-text; }
+}
+
+.gradient-text { background: linear-gradient(90deg, #1677FF, #38D5FF); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+.hero-grid {
+  background-image: linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
